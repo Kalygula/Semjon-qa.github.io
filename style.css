@@ -1,0 +1,115 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.profession {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Основная часть */
+.main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Навыки */
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills li {
+    background: #ecf0f1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Контакты */
+.contacts a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .name {
+        font-size: 2rem;
+    }
+    
+    .profession {
+        font-size: 1rem;
+    }
+    
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.about-photo, .profile-photo {
+    max-width: 100%; /* не шире контейнера */
+    height: auto; /* сохраняет пропорции */
+    display: block; /* убирает лишний пробел под картинкой */
+    margin: 20px auto; /* отступы сверху/снизу 20 px, центрирование */
+}
